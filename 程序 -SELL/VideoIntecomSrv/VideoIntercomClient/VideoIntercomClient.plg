@@ -1,0 +1,90 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: VideoIntercomClient - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"E:\可视对讲\程序\VideoIntecomSrv\Debug/VideoIntercomClient.res" /d "_DEBUG" /d "_AFXDLL" "E:\work\可视对讲\程序 -SELL\VideoIntecomSrv\VideoIntercomClient\VideoIntercomClient.rc"" 
+Creating temporary file "C:\Users\9484\AppData\Local\Temp\RSPBFF4.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"E:\可视对讲\程序\VideoIntecomSrv\Debug/" /Fp"E:\可视对讲\程序\VideoIntecomSrv\Debug/VideoIntercomClient.pch" /Yu"stdafx.h" /Fo"E:\可视对讲\程序\VideoIntecomSrv\Debug/" /Fd"E:\可视对讲\程序\VideoIntecomSrv\Debug/" /FD /GZ /c 
+"E:\work\可视对讲\程序 -SELL\VideoIntecomSrv\VideoIntercomClient\AlarmDlg.cpp"
+"E:\work\可视对讲\程序 -SELL\VideoIntecomSrv\VideoIntercomClient\common\Client.cpp"
+"E:\work\可视对讲\程序 -SELL\VideoIntecomSrv\VideoIntercomClient\EDCLOCK.CPP"
+"E:\work\可视对讲\程序 -SELL\VideoIntecomSrv\VideoIntercomClient\common\IniFile.cpp"
+"E:\work\可视对讲\程序 -SELL\VideoIntecomSrv\VideoIntercomClient\MyListCtrl.cpp"
+"E:\work\可视对讲\程序 -SELL\VideoIntecomSrv\VideoIntercomClient\RecordDlg.cpp"
+"E:\work\可视对讲\程序 -SELL\VideoIntecomSrv\VideoIntercomClient\SetUpDlg.cpp"
+"E:\work\可视对讲\程序 -SELL\VideoIntecomSrv\VideoIntercomClient\VideoIntercomClient.cpp"
+"E:\work\可视对讲\程序 -SELL\VideoIntecomSrv\VideoIntercomClient\VideoIntercomClientDlg.cpp"
+]
+Creating command line "cl.exe @C:\Users\9484\AppData\Local\Temp\RSPBFF4.tmp" 
+Creating temporary file "C:\Users\9484\AppData\Local\Temp\RSPBFF5.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"E:\可视对讲\程序\VideoIntecomSrv\Debug/" /Fp"E:\可视对讲\程序\VideoIntecomSrv\Debug/VideoIntercomClient.pch" /Yc"stdafx.h" /Fo"E:\可视对讲\程序\VideoIntecomSrv\Debug/" /Fd"E:\可视对讲\程序\VideoIntecomSrv\Debug/" /FD /GZ /c 
+"E:\work\可视对讲\程序 -SELL\VideoIntecomSrv\VideoIntercomClient\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Users\9484\AppData\Local\Temp\RSPBFF5.tmp" 
+Creating temporary file "C:\Users\9484\AppData\Local\Temp\RSPBFF6.tmp" with contents
+[
+GdiPlus.lib HCNetSDK.lib PlayCtrl.lib DsSdk.lib winmm.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/VideoIntercomClient.pdb" /debug /machine:I386 /nodefaultlib:"MSVCRT.lib" /nodefaultlib:"LIBC.lib" /out:"Debug/VideoIntercomClient.exe" /pdbtype:sept 
+"\可视对讲\程序\VideoIntecomSrv\Debug\AlarmDlg.obj"
+"\可视对讲\程序\VideoIntecomSrv\Debug\Client.obj"
+"\可视对讲\程序\VideoIntecomSrv\Debug\EDCLOCK.OBJ"
+"\可视对讲\程序\VideoIntecomSrv\Debug\IniFile.obj"
+"\可视对讲\程序\VideoIntecomSrv\Debug\MyListCtrl.obj"
+"\可视对讲\程序\VideoIntecomSrv\Debug\RecordDlg.obj"
+"\可视对讲\程序\VideoIntecomSrv\Debug\SetUpDlg.obj"
+"\可视对讲\程序\VideoIntecomSrv\Debug\StdAfx.obj"
+"\可视对讲\程序\VideoIntecomSrv\Debug\VideoIntercomClient.obj"
+"\可视对讲\程序\VideoIntecomSrv\Debug\VideoIntercomClientDlg.obj"
+"\可视对讲\程序\VideoIntecomSrv\Debug\VideoIntercomClient.res"
+".\res\DETOURS.lib"
+".\res\SkinMagicLib.lib"
+]
+Creating command line "link.exe @C:\Users\9484\AppData\Local\Temp\RSPBFF6.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+AlarmDlg.cpp
+Client.cpp
+EDCLOCK.CPP
+IniFile.cpp
+MyListCtrl.cpp
+RecordDlg.cpp
+E:\work\可视对讲\程序 -SELL\VideoIntecomSrv\VideoIntercomClient\RecordDlg.cpp(364) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+E:\work\可视对讲\程序 -SELL\VideoIntecomSrv\VideoIntercomClient\RecordDlg.cpp(385) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+SetUpDlg.cpp
+VideoIntercomClient.cpp
+VideoIntercomClientDlg.cpp
+E:\work\可视对讲\程序 -SELL\VideoIntecomSrv\VideoIntercomClient\VideoIntercomClientDlg.cpp(1224) : warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+Generating Code...
+Linking...
+Creating temporary file "C:\Users\9484\AppData\Local\Temp\RSPCE97.tmp" with contents
+[
+/nologo /o"Debug/VideoIntercomClient.bsc" 
+"\可视对讲\程序\VideoIntecomSrv\Debug\StdAfx.sbr"
+"\可视对讲\程序\VideoIntecomSrv\Debug\AlarmDlg.sbr"
+"\可视对讲\程序\VideoIntecomSrv\Debug\Client.sbr"
+"\可视对讲\程序\VideoIntecomSrv\Debug\EDCLOCK.SBR"
+"\可视对讲\程序\VideoIntecomSrv\Debug\IniFile.sbr"
+"\可视对讲\程序\VideoIntecomSrv\Debug\MyListCtrl.sbr"
+"\可视对讲\程序\VideoIntecomSrv\Debug\RecordDlg.sbr"
+"\可视对讲\程序\VideoIntecomSrv\Debug\SetUpDlg.sbr"
+"\可视对讲\程序\VideoIntecomSrv\Debug\VideoIntercomClient.sbr"
+"\可视对讲\程序\VideoIntecomSrv\Debug\VideoIntercomClientDlg.sbr"]
+Creating command line "bscmake.exe @C:\Users\9484\AppData\Local\Temp\RSPCE97.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+VideoIntercomClient.exe - 0 error(s), 3 warning(s)
+</pre>
+</body>
+</html>

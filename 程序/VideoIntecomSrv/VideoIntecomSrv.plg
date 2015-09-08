@@ -1,0 +1,67 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: VideoIntecomSrv - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"E:\可视对讲\程序\VideoIntecomSrv\Release/VideoIntecomSrv.res" /d "NDEBUG" /d "_AFXDLL" "E:\可视对讲\程序\VideoIntecomSrv\VideoIntecomSrv.rc"" 
+Creating temporary file "C:\DOCUME~1\hb56\LOCALS~1\Temp\RSP321.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"E:\可视对讲\程序\VideoIntecomSrv\Release/" /Fp"E:\可视对讲\程序\VideoIntecomSrv\Release/VideoIntecomSrv.pch" /Yu"stdafx.h" /Fo"E:\可视对讲\程序\VideoIntecomSrv\Release/" /Fd"E:\可视对讲\程序\VideoIntecomSrv\Release/" /FD /c 
+"E:\可视对讲\程序\VideoIntecomSrv\common\Client.cpp"
+"E:\可视对讲\程序\VideoIntecomSrv\IniFile.cpp"
+"E:\可视对讲\程序\VideoIntecomSrv\common\Listen.cpp"
+"E:\可视对讲\程序\VideoIntecomSrv\SetUpDlg.cpp"
+"E:\可视对讲\程序\VideoIntecomSrv\VideoIntecomSrv.cpp"
+"E:\可视对讲\程序\VideoIntecomSrv\VideoIntecomSrvDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\hb56\LOCALS~1\Temp\RSP321.tmp" 
+Creating temporary file "C:\DOCUME~1\hb56\LOCALS~1\Temp\RSP322.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"E:\可视对讲\程序\VideoIntecomSrv\Release/" /Fp"E:\可视对讲\程序\VideoIntecomSrv\Release/VideoIntecomSrv.pch" /Yc"stdafx.h" /Fo"E:\可视对讲\程序\VideoIntecomSrv\Release/" /Fd"E:\可视对讲\程序\VideoIntecomSrv\Release/" /FD /c 
+"E:\可视对讲\程序\VideoIntecomSrv\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\hb56\LOCALS~1\Temp\RSP322.tmp" 
+Creating temporary file "C:\DOCUME~1\hb56\LOCALS~1\Temp\RSP323.tmp" with contents
+[
+GdiPlus.lib HCNetSDK.lib PlayCtrl.lib DsSdk.lib winmm.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/VideoIntecomSrv.pdb" /machine:I386 /out:"Release/VideoIntecomSrv.exe" 
+".\Release\Client.obj"
+".\Release\IniFile.obj"
+".\Release\Listen.obj"
+".\Release\SetUpDlg.obj"
+".\Release\StdAfx.obj"
+".\Release\VideoIntecomSrv.obj"
+".\Release\VideoIntecomSrvDlg.obj"
+".\Release\VideoIntecomSrv.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\hb56\LOCALS~1\Temp\RSP323.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+Client.cpp
+IniFile.cpp
+Listen.cpp
+SetUpDlg.cpp
+VideoIntecomSrv.cpp
+VideoIntecomSrvDlg.cpp
+E:\可视对讲\程序\VideoIntecomSrv\VideoIntecomSrvDlg.cpp(1285) : warning C4805: '==' : unsafe mix of type 'int' and type 'const bool' in operation
+E:\可视对讲\程序\VideoIntecomSrv\VideoIntecomSrvDlg.cpp(1286) : warning C4805: '==' : unsafe mix of type 'int' and type 'const bool' in operation
+E:\可视对讲\程序\VideoIntecomSrv\VideoIntecomSrvDlg.cpp(1460) : warning C4805: '==' : unsafe mix of type 'int' and type 'const bool' in operation
+E:\可视对讲\程序\VideoIntecomSrv\VideoIntecomSrvDlg.cpp(1461) : warning C4805: '==' : unsafe mix of type 'int' and type 'const bool' in operation
+Generating Code...
+Linking...
+Creating command line "bscmake.exe /nologo /o"Release/VideoIntecomSrv.bsc"  ".\Release\StdAfx.sbr" ".\Release\Client.sbr" ".\Release\IniFile.sbr" ".\Release\Listen.sbr" ".\Release\SetUpDlg.sbr" ".\Release\VideoIntecomSrv.sbr" ".\Release\VideoIntecomSrvDlg.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+VideoIntecomSrv.exe - 0 error(s), 4 warning(s)
+</pre>
+</body>
+</html>

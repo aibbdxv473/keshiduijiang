@@ -1,0 +1,379 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\VideoIntercomClient.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\hblogo.ico"
+IDI_ICON1               ICON    DISCARDABLE     "res\\green.ico"
+IDI_ICON2               ICON    DISCARDABLE     "res\\yellow.ico"
+IDI_ICON3               ICON    DISCARDABLE     "res\\4.ico"
+IDI_ICON4               ICON    DISCARDABLE     "res\\7.ICO"
+IDI_ICON5               ICON    DISCARDABLE     "res\\9.ICO"
+IDI_ICON6               ICON    DISCARDABLE     "res\\6.ICO"
+IDI_STOP_DISABLE        ICON    DISCARDABLE     "res\\STOP_DISABLE.ICO"
+IDI_FASTFORWARD_ENABLE  ICON    DISCARDABLE     "res\\ico00001.ico"
+IDI_GOTOSTART_DISABLE   ICON    DISCARDABLE     "res\\ico1.ico"
+IDI_FASTBACKWARD_DISABLE ICON    DISCARDABLE     "res\\ico00002.ico"
+IDI_FASTFORWARD_DISABLE ICON    DISCARDABLE     "res\\ico00003.ico"
+IDI_GOTOEND_DISABLE     ICON    DISCARDABLE     "res\\ico00004.ico"
+IDI_GOTOSTART_ENABLE    ICON    DISCARDABLE     "res\\ico00006.ico"
+IDI_GOTOEND_ENABLE      ICON    DISCARDABLE     "res\\ico00007.ico"
+IDI_STEPBACK_ENABLE     ICON    DISCARDABLE     "res\\ico00010.ico"
+IDI_STEPBACK_DISABLE    ICON    DISCARDABLE     "res\\ico00011.ico"
+IDI_PAUSE_DISABLE       ICON    DISCARDABLE     "res\\icon1.ico"
+IDI_STEP_ENABLE         ICON    DISCARDABLE     "res\\icon2.ico"
+IDI_FASTBACKWARD_ENABLE ICON    DISCARDABLE     "res\\icon8.ico"
+IDI_PAUSE_ENABLE        ICON    DISCARDABLE     "res\\PAUSE_ENABLE.ICO"
+IDI_PLAY_DISABLE        ICON    DISCARDABLE     "res\\PLAY_DISABLE.ICO"
+IDI_PLAY_ENABLE         ICON    DISCARDABLE     "res\\PLAY_ENABLE.ICO"
+IDI_SOUND_ENABLE        ICON    DISCARDABLE     "res\\ico00008.ico"
+IDI_SOUND_DISABLE       ICON    DISCARDABLE     "res\\ico00009.ico"
+IDI_STOP_ENABLE         ICON    DISCARDABLE     "res\\STOP.ICO"
+IDI_STEP_DISABLE        ICON    DISCARDABLE     "res\\step_disable.ico"
+IDI_PIC                 ICON    DISCARDABLE     "res\\camera.ico"
+IDI_PIC1                ICON    DISCARDABLE     "res\\Camera1.ico"
+IDI_CLOSE               ICON    DISCARDABLE     "res\\CLOSE.ICO"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 VideoIntercomClient"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "VideoIntercomClient 1.0 版",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2010",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_VIDEOINTERCOMCLIENT_DIALOG DIALOGEX 0, 0, 546, 401
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "可视对讲"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "",IDC_PIC1,"Static",SS_WHITEFRAME | WS_BORDER,14,41,337,
+                    260
+    PUSHBUTTON      "关闭视频",IDC_CLOSEVIDEO,350,11,38,20,BS_FLAT
+    PUSHBUTTON      "视频截图",IDC_BTN_CAPTURE,230,11,38,20,BS_FLAT,
+                    WS_EX_TRANSPARENT
+    CONTROL         "List1",IDC_LIST_ALL_LOG,"SysListView32",LVS_REPORT | 
+                    WS_BORDER | WS_TABSTOP,13,310,519,79
+    PUSHBUTTON      "开始录像",IDC_BTN_RECORD,270,11,38,20,BS_FLAT
+    CONTROL         "List2",IDC_LIST_CHANNEL,"SysListView32",LVS_SINGLESEL | 
+                    WS_BORDER | WS_TABSTOP,358,40,185,263
+    CONTROL         "连接超时自动断开",IDC_CHECK_DISCONNECT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,96,16,81,13,
+                    WS_EX_TRANSPARENT
+    CONTROL         "Animate1",IDC_ANIMATE1,"SysAnimate32",WS_BORDER | 
+                    WS_TABSTOP,20,14,24,19
+    CONTROL         "仅语音",IDC_CHECK_AUDIO,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,54,16,45,13
+    GROUPBOX        "",IDC_STATIC,14,2,422,36
+    PUSHBUTTON      "录像回放",IDC_BTN_PLAY_RECORD,310,11,38,20,BS_FLAT
+    PUSHBUTTON      "退出系统",IDC_SHOW_HIDE,390,11,38,20,BS_FLAT
+    LTEXT           "版权所有:    上海海勃物流软件有限公司  2010-2013 Ver2.0",
+                    IDC_STATIC,306,390,229,9
+    PUSHBUTTON      "开始广播",IDC_BLOAD_CAST,183,11,38,20,BS_FLAT
+END
+
+IDD_DLG_ALARM DIALOG DISCARDABLE  0, 0, 172, 62
+STYLE DS_MODALFRAME | WS_POPUP
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "接受",IDC_BTN_ACCEPT,15,37,54,18
+    PUSHBUTTON      "拒绝",IDC_BTN_RECV2,95,37,54,18
+    LTEXT           "",IDC_ALARM_INFO,25,10,114,19
+END
+
+IDD_DLG_SETUP DIALOG DISCARDABLE  0, 0, 268, 120
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "参数设置"
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "确定",IDOK,227,12,38,14,BS_FLAT
+    PUSHBUTTON      "取消",IDCANCEL,227,29,38,14,BS_FLAT
+    LTEXT           "服务端地址：",IDC_STATIC,21,24,50,8
+    CONTROL         "IPAddress1",IDC_IPADDRESS1,"SysIPAddress32",WS_TABSTOP,
+                    78,22,84,10
+    GROUPBOX        "服务端",IDC_STATIC,8,9,208,32
+    GROUPBOX        "基本参数",IDC_STATIC,9,47,257,70
+    LTEXT           "图片保存路径：",IDC_STATIC,20,80,59,12
+    LTEXT           "视频录像路径：",IDC_STATIC,20,99,59,12
+    EDITTEXT        IDC_EDIT_PICPATH,80,79,149,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_RECORDPATH,80,97,148,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BTN_PATH1,236,78,16,12
+    PUSHBUTTON      "...",IDC_BTN_PATH2,236,98,16,12
+    LTEXT           "自动断开时间：",IDC_STATIC,20,64,59,10
+    EDITTEXT        IDC_EDIT_CONNECT_TIME,81,63,29,9,ES_AUTOHSCROLL
+    CONTROL         "Spin1",IDC_SPIN1,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS,107,62,9,
+                    13
+    LTEXT           "分钟",IDC_STATIC,113,64,26,10
+END
+
+IDD_DIALOG_RECORD DIALOG DISCARDABLE  0, 0, 284, 230
+STYLE DS_MODALFRAME | WS_POPUP
+FONT 10, "System"
+BEGIN
+    CONTROL         "",IDC_STATIC_LOCAL_FILE_WND,"Static",SS_BLACKFRAME,0,3,
+                    284,188
+    PUSHBUTTON      "Pla",IDC_BTN_LOCAL_PLAY,8,211,17,15,BS_ICON
+    PUSHBUTTON      "Pla",IDC_BTN_LOCAL_STOP,25,211,17,15,BS_ICON
+    PUSHBUTTON      "Pla",IDC_BTN_LOCAL_SLOW,42,211,17,15,BS_ICON
+    PUSHBUTTON      "Pla",IDC_BTN_LOCAL_FAST,59,211,17,15,BS_ICON
+    PUSHBUTTON      "Pla",IDC_BTN_LOCAL_PIC_SNATCH,76,211,17,15,BS_ICON
+    PUSHBUTTON      "Pla",IDC_BTN_LOCAL_STEP_BACK,93,211,17,15,BS_ICON
+    PUSHBUTTON      "Pla",IDC_BTN_LOCAL_STEP_FORWARD,110,211,17,15,BS_ICON
+    PUSHBUTTON      "Pla",IDC_BTN_LOCAL_SOUND,127,211,17,15,BS_ICON
+    CONTROL         "Slider1",IDC_SLIDER_LOCAL_PLAY_PROGRESS,
+                    "msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,
+                    5,197,274,8
+    CONTROL         "Slider2",IDC_SLIDER_LOCAL_VOLUME,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,161,214,50,9
+    LTEXT           "",IDC_STATIC_LOCAL_PLAY_STATUS,215,211,61,13
+    PUSHBUTTON      "Pla",IDC_BTN_CLOSE,262,213,17,15,BS_ICON
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "VideoIntercomClient Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "VideoIntercomClient\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2010\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "VideoIntercomClient.EXE\0"
+            VALUE "ProductName", "VideoIntercomClient 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_VIDEOINTERCOMCLIENT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 543
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 399
+    END
+
+    IDD_DLG_ALARM, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 168
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 58
+    END
+
+    IDD_DLG_SETUP, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 266
+        TOPMARGIN, 3
+    END
+
+    IDD_DIALOG_RECORD, DIALOG
+    BEGIN
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 228
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BACK                BITMAP  DISCARDABLE     "res\\背景.bmp"
+IDB_BITMAP01            BITMAP  DISCARDABLE     "res\\按钮2.bmp"
+IDB_BITMAP02            BITMAP  DISCARDABLE     "res\\按钮1.bmp"
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\0.BMP"
+IDB_BITMAP2             BITMAP  DISCARDABLE     "res\\1.BMP"
+IDB_BITMAP3             BITMAP  DISCARDABLE     "res\\2.BMP"
+IDB_BITMAP4             BITMAP  DISCARDABLE     "res\\3.BMP"
+IDB_BITMAP5             BITMAP  DISCARDABLE     "res\\4.BMP"
+IDB_BITMAP6             BITMAP  DISCARDABLE     "res\\5.BMP"
+IDB_BITMAP7             BITMAP  DISCARDABLE     "res\\6.BMP"
+IDB_BITMAP8             BITMAP  DISCARDABLE     "res\\7.BMP"
+IDB_BITMAP9             BITMAP  DISCARDABLE     "res\\8.BMP"
+IDB_BITMAP10            BITMAP  DISCARDABLE     "res\\9.BMP"
+IDB_BITMAP11            BITMAP  DISCARDABLE     "res\\BLACK.BMP"
+IDB_BITMAP12            BITMAP  DISCARDABLE     "res\\POINT.BMP"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// SKINMAGIC
+//
+
+XPSTEEL                 SKINMAGIC DISCARDABLE   "res\\xpsteel.smf"
+IDR_SKINMAGIC1          SKINMAGIC DISCARDABLE   "res\\x-plus.smf"
+IDR_SKINMAGIC2          SKINMAGIC DISCARDABLE   "res\\corona.smf"
+IDR_SKINMAGIC3          SKINMAGIC DISCARDABLE   "res\\Devior.smf"
+IDR_SKINMAGIC4          SKINMAGIC DISCARDABLE   "res\\fish.smf"
+IDR_SKINMAGIC5          SKINMAGIC DISCARDABLE   "res\\King.smf"
+IDR_SKINMAGIC6          SKINMAGIC DISCARDABLE   "res\\Kromo.smf"
+IDR_SKINMAGIC7          SKINMAGIC DISCARDABLE   "res\\xpblue.smf"
+IDR_SKINMAGIC8          SKINMAGIC DISCARDABLE   "res\\xpgrean.smf"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AVI
+//
+
+IDR_AVI1                AVI     DISCARDABLE     "res\\vc.avi"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 VideoIntercomClient(&A)..."
+    IDP_SOCKETS_INIT_FAILED "Windows 通信端口初始化失败。"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\VideoIntercomClient.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
